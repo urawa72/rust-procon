@@ -1,6 +1,8 @@
 use proconio::{input, fastout};
 use std::cmp::max;
 
+// DAG上のDP
+// トポロジカルソート
 #[fastout]
 fn main() {
     input! { n: usize, m: usize, xy: [(usize, usize); m] }
