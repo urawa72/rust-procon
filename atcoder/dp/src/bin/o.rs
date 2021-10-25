@@ -14,16 +14,21 @@ fn main() {
         a: [[usize; n]; n]
     }
 
-    let mut dp = vec![0usize; 1 << n];
-    dp[0] = 1;
-    for bit in 0..(1 << n) as usize {
-        let i = bit.count_ones() as usize;
-        for j in 0..n {
-            if bit >> j & 1 == 1 && a[i - 1][j] == 1 {
-                dp[bit] += dp[bit ^ 1 << j];
-                dp[bit] %= MOD;
+    let mut dp = vec![vec![0usize; 1 << n]; n + 1];
+    dp[0][0] = 1;
+    for i in 0..n {
+        for s in 0..(1 << n) as usize {
+            let c = s.count_ones() as usize;
+            if i == c {
+                for j in 0..n {
+                    if s & 1 << j != 1 && a[i][j] == 1 {
+                        dp[i + 1][s | (1 << j)] += dp[i][s];
+                        dp[i + 1][s | (1 << j)] %= MOD;
+                    }
+                }
             }
+
         }
     }
-    println!("{}", dp[(1 << n) - 1]);
+    println!("{}", dp[n][(1 << n) - 1]);
 }
