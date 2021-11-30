@@ -17,6 +17,7 @@ impl ListNode {
 pub struct Solution {}
 
 // problem: https://leetcode.com/problems/add-two-numbers/
+#[allow(unused_assignments)]
 impl Solution {
     pub fn add_two_numbers(
         l1: Option<Box<ListNode>>,
