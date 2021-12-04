@@ -1,2 +1,4 @@
-pub mod solutions;
+#[macro_use]
 pub mod util;
+
+pub mod solutions;
