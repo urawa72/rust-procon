@@ -1,5 +1,6 @@
 pub mod s0001_two_sum;
 pub mod s0002_add_to_numbers;
+pub mod s0036_valid_sudoku;
 pub mod s0049_group_anagrams;
 pub mod s0069_sqrtx;
 pub mod s0070_climbing_stairs;
