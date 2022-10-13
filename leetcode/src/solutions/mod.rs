@@ -9,6 +9,7 @@ pub mod s0088_merge_sorted_array;
 pub mod s0094_binary_tree_inorder_traversal;
 pub mod s0100_same_tree;
 pub mod s0104_maximum_depth_of_binary_tree;
+pub mod s0128_longest_conseutive_sequence;
 pub mod s0217_contains_duplicate;
 pub mod s0238_product_of_array_except_self;
 pub mod s0242_valid_anagram;
