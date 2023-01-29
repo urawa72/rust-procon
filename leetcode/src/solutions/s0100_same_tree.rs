@@ -49,14 +49,14 @@ mod tests {
     fn s0100_case1() {
         let tree1 = to_tree(vec![Some(1), Some(2), Some(3)]);
         let tree2 = to_tree(vec![Some(1), Some(2), Some(3)]);
-        assert_eq!(Solution::is_same_tree(tree1, tree2), true);
+        assert!(Solution::is_same_tree(tree1, tree2));
     }
 
     #[test]
     fn s0100_case2() {
         let tree1 = to_tree(vec![Some(1), Some(2)]);
         let tree2 = to_tree(vec![Some(1), None, Some(2)]);
-        assert_eq!(Solution::is_same_tree(tree1, tree2), false);
+        assert!(!Solution::is_same_tree(tree1, tree2));
     }
 
     #[test]
@@ -79,6 +79,6 @@ mod tests {
             Some(15),
             Some(7),
         ]);
-        assert_eq!(Solution::is_same_tree(tree1, tree2), true);
+        assert!(Solution::is_same_tree(tree1, tree2));
     }
 }

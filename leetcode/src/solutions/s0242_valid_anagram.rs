@@ -17,7 +17,10 @@ mod test {
 
     #[test]
     fn case1() {
-        assert!(Solution::is_anagram("anagram".to_string(), "nagaram".to_string()))
+        assert!(Solution::is_anagram(
+            "anagram".to_string(),
+            "nagaram".to_string()
+        ))
     }
     #[test]
     fn case2() {

@@ -13,6 +13,6 @@ impl Solution {
             map.entry(t).or_default().push(s);
         }
 
-        map.into_iter().map(|(_, v)| v).collect()
+        map.into_values().collect()
     }
 }

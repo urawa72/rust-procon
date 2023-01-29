@@ -9,7 +9,7 @@ impl Solution {
             dp[i + 1] += dp[i];
             dp[i + 2] += dp[i];
         }
-        return dp[n as usize];
+        dp[n as usize]
     }
 }
 

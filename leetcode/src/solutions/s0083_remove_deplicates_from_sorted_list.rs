@@ -52,9 +52,6 @@ mod test {
 
     #[test]
     fn s0083_case3() {
-        assert_eq!(
-            None,
-            Solution::delete_duplicates(to_list(vec![]))
-        )
+        assert_eq!(None, Solution::delete_duplicates(to_list(vec![])))
     }
 }
