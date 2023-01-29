@@ -11,6 +11,7 @@ pub mod s0100_same_tree;
 pub mod s0104_maximum_depth_of_binary_tree;
 pub mod s0125_valid_palindrome;
 pub mod s0128_longest_conseutive_sequence;
+pub mod s0167_two_sum_two;
 pub mod s0217_contains_duplicate;
 pub mod s0238_product_of_array_except_self;
 pub mod s0242_valid_anagram;
